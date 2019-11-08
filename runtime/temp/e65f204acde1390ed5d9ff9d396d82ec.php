@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"E:\xampp\htdocs\currency\public/../application/admin\view\student\add.html";i:1571886007;s:67:"E:\xampp\htdocs\currency\application\admin\view\layout\default.html";i:1570347773;s:64:"E:\xampp\htdocs\currency\application\admin\view\common\meta.html";i:1570347773;s:66:"E:\xampp\htdocs\currency\application\admin\view\common\script.html";i:1570347773;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"E:\xampp\htdocs\currency\public/../application/admin\view\student\add.html";i:1573179996;s:67:"E:\xampp\htdocs\currency\application\admin\view\layout\default.html";i:1570347774;s:64:"E:\xampp\htdocs\currency\application\admin\view\common\meta.html";i:1570347774;s:66:"E:\xampp\htdocs\currency\application\admin\view\common\script.html";i:1570347774;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -59,7 +59,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Std_id'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('学号'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-std_id" data-rule="required" class="form-control" name="row[std_id]" type="text">
         </div>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"E:\xampp\htdocs\currency\public/../application/admin\view\student\index.html";i:1571798004;s:67:"E:\xampp\htdocs\currency\application\admin\view\layout\default.html";i:1570347773;s:64:"E:\xampp\htdocs\currency\application\admin\view\common\meta.html";i:1570347773;s:66:"E:\xampp\htdocs\currency\application\admin\view\common\script.html";i:1570347773;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"E:\xampp\htdocs\currency\public/../application/admin\view\student\index.html";i:1571798006;s:67:"E:\xampp\htdocs\currency\application\admin\view\layout\default.html";i:1570347774;s:64:"E:\xampp\htdocs\currency\application\admin\view\common\meta.html";i:1570347774;s:66:"E:\xampp\htdocs\currency\application\admin\view\common\script.html";i:1570347774;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>

@@ -7,7 +7,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 extend: {
                     index_url: 'student_type/index' + location.search,
                     add_url: 'student_type/add',
-                    edit_url: 'student_type/edit',
+                    edit_url: '',
                     del_url: 'student_type/del',
                     multi_url: 'student_type/multi',
                     table: 'student_type',
