@@ -1,0 +1,17 @@
+[ 2019-11-05T20:45:58+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000193s ]
+[ info ] [ LOG ] INIT File
+[ 2019-11-05T20:45:58+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-11-05T20:45:58+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002442s ]
+[ 2019-11-05T20:45:58+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-11-05T20:45:58+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001982s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-11-05T20:45:58+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'type' [ RunTime:0.001336s ]
+[ 2019-11-05T20:45:58+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_type' [ RunTime:0.001137s ]
+[ 2019-11-05T20:46:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000199s ]
+[ info ] [ LOG ] INIT File
+[ 2019-11-05T20:46:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-11-05T20:46:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002488s ]
+[ 2019-11-05T20:46:17+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-11-05T20:46:17+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001405s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-11-05T20:46:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'type' [ RunTime:0.000935s ]
+[ 2019-11-05T20:46:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_type' [ RunTime:0.000912s ]
+[ 2019-11-05T20:46:17+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_type' ORDER BY ORDINAL_POSITION [ RunTime:0.005974s ]
