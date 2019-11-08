@@ -2350,3 +2350,250 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.005888s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000393s ]
 [ sql ] [ SQL ] SELECT * FROM `fa_student` LIMIT 0,10 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:54+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001436s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007592s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006128s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:54+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012003s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006686s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005089s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:54+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001009s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.005959s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007613s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'student' LIMIT 1 [ RunTime:0.000463s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:55+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003100s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.005719s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012714s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.009285s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:55+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1573180974854
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001321s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.005148s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005265s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.007783s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` LIMIT 0,10 [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:56+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002684s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009451s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005963s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000537s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:58+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001762s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015519s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007792s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'studenttype' LIMIT 1 [ RunTime:0.000427s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:58+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1573180978712
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001073s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012030s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009498s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student_type` [ RunTime:0.009199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.005477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.007089s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student_type` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student_type` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  `id` IN (1) [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `id` IN (1,5,9,3,2) [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:59+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011217s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.005201s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006272s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000761s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:42:59+08:00 ] 127.0.0.1 GET www.currency.com/api/type/state/0?v=03658002090972896
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002047s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.009255s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `state` = 0 [ RunTime:0.000600s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:43:07+08:00 ] 127.0.0.1 POST www.currency.com/gUenFzrwaS.php/student/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001281s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006650s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.004929s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.006335s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student` WHERE  (  `name` LIKE '%%' ) LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  (  `name` LIKE '%%' ) ORDER BY `name` ASC LIMIT 0,10 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.005844s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('学生管理 查看' , '{\"q_word\":[\"\"],\"pageNumber\":\"1\",\"pageSize\":\"10\",\"andOr\":\"AND\",\"orderBy\":[[\"name\",\"ASC\"]],\"searchTable\":\"tbl\",\"showField\":\"name\",\"keyField\":\"id\",\"searchField\":[\"name\"],\"name\":\"\"}' , '/gUenFzrwaS.php/student/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36' , '127.0.0.1' , 1573180987) [ RunTime:0.003303s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:43:08+08:00 ] 127.0.0.1 GET www.currency.com/api/type/state/1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011014s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.006594s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `state` = 1 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:43:09+08:00 ] 127.0.0.1 GET www.currency.com/api/type/state/0
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010520s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.005631s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `state` = 0 [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:43:12+08:00 ] 127.0.0.1 POST www.currency.com/gUenFzrwaS.php/student_type/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001366s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006782s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007257s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.006932s ]
+[ sql ] [ SQL ] UPDATE `fa_student`  SET `cry`=cry+1  WHERE  `id` = 43 [ RunTime:0.002119s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student_type` [ RunTime:0.005381s ]
+[ sql ] [ SQL ] INSERT INTO `fa_student_type` (`student_id` , `state` , `type_id` , `put_crys` , `operation_time` , `now_crys`) VALUES (43 , 0 , 3 , 1 , '2019-11-08' , -3) [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.005191s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('学币管理 添加' , '{\"dialog\":\"1\",\"row\":{\"student_id\":\"43\",\"state\":\"0\",\"type_id\":\"3\",\"put_crys\":\"1\",\"operation_time\":\"2019-11-08\"}}' , '/gUenFzrwaS.php/student_type/add?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36' , '127.0.0.1' , 1573180992) [ RunTime:0.002184s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:43:12+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1573180978713
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001391s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008527s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006680s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student_type` [ RunTime:0.009341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.006886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.007891s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student_type` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001345s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student_type` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  `id` IN (43,1) [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `id` IN (3,1,5,9,2) [ RunTime:0.000771s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:26+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001317s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006622s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005526s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000709s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:26+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001200s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006333s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005802s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:26+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001499s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008237s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008945s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'studenttype' LIMIT 1 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:27+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1573181066983
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001119s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012951s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.006577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006326s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student_type` [ RunTime:0.007591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.008354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.017782s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student_type` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002204s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student_type` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  `id` IN (43,1) [ RunTime:0.000997s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `id` IN (3,1,5,9,2) [ RunTime:0.000585s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:27+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001342s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008136s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006462s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.012825s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.000517s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:27+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1573181066984
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001566s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011983s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006460s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student_type` [ RunTime:0.016190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.021798s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.009963s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student_type` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.005397s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student_type` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  `id` IN (43,1) [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `id` IN (3,1,5,9,2) [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:28+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001487s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007278s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008038s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000583s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:28+08:00 ] 127.0.0.1 GET www.currency.com/api/type/state/0?v=02797239554174089
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011439s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.005205s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `state` = 0 [ RunTime:0.000290s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:32+08:00 ] 127.0.0.1 POST www.currency.com/gUenFzrwaS.php/student/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011015s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006007s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006226s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.006071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student` WHERE  (  `name` LIKE '%%' ) LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  (  `name` LIKE '%%' ) ORDER BY `name` ASC LIMIT 0,10 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.005512s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('学生管理 查看' , '{\"q_word\":[\"\"],\"pageNumber\":\"1\",\"pageSize\":\"10\",\"andOr\":\"AND\",\"orderBy\":[[\"name\",\"ASC\"]],\"searchTable\":\"tbl\",\"showField\":\"name\",\"keyField\":\"id\",\"searchField\":[\"name\"],\"name\":\"\"}' , '/gUenFzrwaS.php/student/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36' , '127.0.0.1' , 1573181072) [ RunTime:0.002913s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:39+08:00 ] 127.0.0.1 POST www.currency.com/gUenFzrwaS.php/student_type/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009741s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005852s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.005880s ]
+[ sql ] [ SQL ] UPDATE `fa_student`  SET `cry`=cry+4  WHERE  `id` = 34 [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student_type` [ RunTime:0.007103s ]
+[ sql ] [ SQL ] INSERT INTO `fa_student_type` (`student_id` , `state` , `type_id` , `put_crys` , `operation_time` , `now_crys`) VALUES (34 , 0 , 3 , 4 , '2019-11-08' , 125) [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.007211s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('学币管理 添加' , '{\"dialog\":\"1\",\"row\":{\"student_id\":\"34\",\"state\":\"0\",\"type_id\":\"3\",\"put_crys\":\"4\",\"operation_time\":\"2019-11-08\"}}' , '/gUenFzrwaS.php/student_type/add?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36' , '127.0.0.1' , 1573181079) [ RunTime:0.002537s ]
+---------------------------------------------------------------
+[ 2019-11-08T10:44:40+08:00 ] 127.0.0.1 GET www.currency.com/gUenFzrwaS.php/student_type/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1573181066985
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002078s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008732s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010771s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student_type` [ RunTime:0.010018s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_student` [ RunTime:0.005437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_type` [ RunTime:0.008392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_student_type` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student_type` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_student` WHERE  `id` IN (34,43,1) [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_type` WHERE  `id` IN (3,1,5,9,2) [ RunTime:0.000253s ]
